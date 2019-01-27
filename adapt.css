@@ -34,3 +34,9 @@
 		width: 270px;
 	}
 }
+
+
+@media (max-height: 580px) {
+	.choose-type img {width: 80px;}
+	.choose-type h2 {font-size: 25px;}
+}
