@@ -1,1 +1,0 @@
-# pubg-m.github.io
