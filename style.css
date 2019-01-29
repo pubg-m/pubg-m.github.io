@@ -1,0 +1,270 @@
+* {margin: 0; padding: 0;}
+*::selection {
+	background: #EBD98D;
+}
+body {
+	background-color: #000;
+	font-family: 'Share Tech Mono', sans-serif;
+}
+#selected {
+	border-bottom: 2px solid;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 13vh;
+	background-color: #0d0d0d;
+
+	border-bottom: 2px solid #CAA45F;
+}
+.menu {
+	display: flex;
+	align-self: center;
+}
+.menu li {
+	list-style: none;
+	font-size: 24px;
+	padding: 0 25px;
+}
+.menu li a {
+	color: #EBD98D;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.menu a:hover {
+	border-bottom: 2px solid;
+}
+.header img {
+	width: 75px;
+	padding-left: 15px;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+}
+.home {
+	min-height: 81vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	background-image: url(img/other/bg.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.text-home {
+	color: #EBD98D;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 15px;
+	border-radius: 20px;
+	font-size: 30px;
+}
+.text-home h1, .text-home h2 {
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: 0 0 10px;
+}
+.text-home h2 {font-weight: normal;}
+.home p {
+	color: #EBD98D;
+	text-transform: uppercase;
+	font-size: 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	border-radius: 30px;
+	text-align: center;
+}
+
+
+
+
+
+/*------------------------------------WEAPONS------------------------------------*/
+.weapons-types {
+	min-height: 84.5vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	text-transform: uppercase;
+	flex-wrap: wrap;
+}
+.weapons-types a {
+	text-decoration: none;
+	color: #000;
+}
+.choose-type {
+	width: 450px;
+	height: 40vh;
+	background: linear-gradient(to right, #B98847, #FDF4A5);
+	border-radius: 30px;
+	border: 2px solid #DEE1E6;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: 0.3s;
+}
+.choose-type:hover {
+	transform: scale(1.05);
+}
+.ct2 {background: linear-gradient(to left, #B98847, #FDF4A5);}
+.weapons-types img {
+	width: 150px;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+}
+.weapons-types h2 {
+	font-size: 30px;
+}
+
+/*-------------*/
+.wpn-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+.choose-one h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #EBD98D;
+    text-shadow: 0 0 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+}
+.wpn-list a {text-decoration: none;}
+.choose-one {
+	margin: 10px;
+	padding: 5px;
+	width: 350px;
+	height: 20vh;
+	border-radius: 30px;
+    border: 2px solid #DEE1E6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s transform;
+    cursor: pointer;
+}
+.choose-one:hover {
+	transform: scale(1.05);
+}
+
+
+.ar {
+	background: url(img/ar/m16a4.png);
+	background-position: center;
+	background-size: cover;
+}
+.sniper {
+	background: url(img/sniper/awm.png);
+	background-position: center;
+	background-size: cover;
+}
+.submachine {
+	background: url(img/submachine/ump9.png);
+	background-position: center;
+	background-size: cover;
+}
+.dmr {
+	background: url(img/dmr/mini14.png);
+	background-position: center;
+	background-size: cover;
+}
+.machine {
+	background: url(img/machine/m249.png);
+	background-position: center;
+	background-size: cover;
+}
+.shotgun {
+	background: url(img/shotgun/s1897.png);
+	background-position: center;
+	background-size: cover;
+}
+.pistol {
+	background: url(img/pistol/p18c.png);
+	background-position: center;
+	background-size: cover;
+}
+.crossbow {
+	background: url(img/crossbow/crossbow.png);
+	background-position: center;
+	background-size: cover;
+}
+.melee {
+	background: url(img/melee/pan.png);
+	background-position: center;
+	background-size: cover;
+}
+/**/
+.frag {
+	background: url(img/grenade/frag.png);
+	background-position: center;
+	background-size: cover;
+}
+.molotov {
+	background: url(img/grenade/molotov.png);
+	background-position: center;
+	background-size: cover;
+}
+.smoke {
+	background: url(img/grenade/smoke.png);
+	background-position: center;
+	background-size: cover;
+}
+.stun {
+	background: url(img/grenade/stun.png);
+	background-position: center;
+	background-size: cover;
+}
+
+
+
+
+
+/*-----FOOTER-----*/
+.footer {
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 10px;
+	justify-content: space-between;
+	font-family: 'Share Tech Mono', monospace; 
+}
+.footer span, .footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+
+/*-----language-----*/
+.lang {
+    padding: 10px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+    font-size: 20px;
+}
+.lang span a, .lang {
+    color: #EBD98D;
+    text-decoration: none;
+}
+.lang a:hover {
+    text-decoration: underline;
+}
+
+
+.counter img {
+    border-radius: 5px;
+    opacity: 1;
+    height: 20px;
+}
+.counter {
+    position: absolute;
+    left: 48.5%;
+}
+
+
