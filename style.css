@@ -1,4 +1,7 @@
 * {margin: 0; padding: 0;}
+*::-moz-selection {
+	background: #EBD98D;
+}
 *::selection {
 	background: #EBD98D;
 }
@@ -11,17 +14,26 @@ body {
 }
 
 .header {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	min-height: 13vh;
 	background-color: #0d0d0d;
 
 	border-bottom: 2px solid #CAA45F;
 }
 .menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-self: center;
+	-ms-flex-item-align: center;
+	    align-self: center;
 }
 .menu li {
 	list-style: none;
@@ -44,10 +56,18 @@ body {
 }
 .home {
 	min-height: 81vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	background-image: url(img/other/bg.jpg);
 	background-position: center;
 	background-size: cover;
@@ -82,11 +102,17 @@ body {
 /*------------------------------------WEAPONS------------------------------------*/
 .weapons-types {
 	min-height: 84.5vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	text-transform: uppercase;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 .weapons-types a {
 	text-decoration: none;
@@ -95,19 +121,35 @@ body {
 .choose-type {
 	width: 450px;
 	height: 40vh;
+	background: -webkit-gradient(linear, left top, right top, from(#B98847), to(#FDF4A5));
+	background: -webkit-linear-gradient(left, #B98847, #FDF4A5);
+	background: -o-linear-gradient(left, #B98847, #FDF4A5);
 	background: linear-gradient(to right, #B98847, #FDF4A5);
 	border-radius: 30px;
 	border: 2px solid #DEE1E6;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
 }
 .choose-type:hover {
-	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	    -ms-transform: scale(1.05);
+	        transform: scale(1.05);
 }
-.ct2 {background: linear-gradient(to left, #B98847, #FDF4A5);}
+.ct2 {background: -webkit-gradient(linear, right top, left top, from(#B98847), to(#FDF4A5));background: -webkit-linear-gradient(right, #B98847, #FDF4A5);background: -o-linear-gradient(right, #B98847, #FDF4A5);background: linear-gradient(to left, #B98847, #FDF4A5);}
 .weapons-types img {
 	width: 150px;
 	-webkit-user-drag: none;
@@ -119,10 +161,16 @@ body {
 
 /*-------------*/
 .wpn-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-around;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 .choose-one h2 {
     font-size: 20px;
@@ -141,15 +189,30 @@ body {
 	height: 20vh;
 	border-radius: 30px;
     border: 2px solid #DEE1E6;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: 0.3s -webkit-transform;
+    transition: 0.3s -webkit-transform;
+    -o-transition: 0.3s transform;
     transition: 0.3s transform;
+    transition: 0.3s transform, 0.3s -webkit-transform;
     cursor: pointer;
 }
 .choose-one:hover {
-	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	    -ms-transform: scale(1.05);
+	        transform: scale(1.05);
 }
 
 
@@ -226,10 +289,14 @@ body {
 
 /*-----FOOTER-----*/
 .footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	background-color: rgba(0, 0, 0, 0.8);
 	padding: 10px;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	font-family: 'Share Tech Mono', monospace; 
 }
 .footer span, .footer a {
@@ -243,6 +310,8 @@ body {
 /*-----language-----*/
 .lang {
     padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 30px;
@@ -266,5 +335,3 @@ body {
     position: absolute;
     left: 48%;
 }
-
-
